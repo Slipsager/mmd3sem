@@ -1,5 +1,11 @@
-<?php
+<!DOCTYPE html>
+<head>
+  <title>The is a wordpress blog</title>
+</head>
 
+<body>
+
+<?php
 bloginfo('name'); // a template
 
 // the post loop
@@ -15,4 +21,7 @@ if ( have_posts() ) {
 
 	} // end while
 } // end if
+
 ?>
+</body>
+</html>
