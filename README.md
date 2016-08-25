@@ -5,7 +5,7 @@ The files are developed over different commits (versions)
 
 Wordpress custom theming intro
 
-My first theme
+My first theme:
 1. Intro day 1 (index.php , style.css )
 2. The Post loop  (index.php)
 3. Basic html added (index.php)
