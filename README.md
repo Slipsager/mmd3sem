@@ -15,7 +15,7 @@ My first theme:
 
 4. Static blog added (static_blog.html , css/mystyle1.css )
 
-## Branche: custom wordpress theme for blog
+## Branch: custom wordpress theme for blog
 
 My second theme
 
