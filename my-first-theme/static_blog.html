@@ -12,54 +12,75 @@
 
 <body>
   <div id="allcontent">
-    <header id="header">
+    <header id="mainheader">
       <h1> Header</h1>
       <nav id="menu">
 
         <ul>
           <li><a href="#">INTRO</a></li>
           <li><a href="#">HTML</a></li>
-          <li><a href="#">XHTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li class="aktivpage "><a href="#">FORMS</a></li>
-          <li><a href="#">HTML5</a></li>
+          <li><a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">Semantic HTML5</a></li>
         </ul>
       </nav>
       <!-- menu-->
     </header>
 
     <aside id="sidebar">
-      <h1>Sidebar</h1>
+      <p>Sidebar</p>
     </aside>
 
     <main id="content">
-      <article class="post">1. Markup Exercise: <a href="exercise1.html" target="_blank">My Solution</a>
-        <br /> Make a html5 document were you markup the follow text from chapter 5 in the HTML5 book with propper semantic tags (h1,h2,h3,p,q,code…).
-      </article>
 
-      <article class="post">2. XHTML 1.0 Strict: <a href="exercise2.html" target="_blank">My Solution</a>
-        <br /> Make an absolute centered layout (#allcontent ) that validates in xhtml 1.0 strict</article>
+      <!--      new blog post -->
+      <article class="post">
+        <header><h1>1. Markup Exercise: </h1>
+          <p>Published: <time pubdate="pubdate">2017-10-09</time></p>
+        </header>
 
-      <article class="post">3. Make a 2 column layout with CSS: <a href="exercise3.html">My Solution</a> (current page)
-        <br /> Try to implement the following wireframe on the webpage using div tags, id and class attributes in the html code and e.g.
+        <p>Make a html5 document were you markup the follow text from chapter 5 in the HTML5 book with propper semantic tags (h1,h2,h3,p,q,code…).
+        </p>
+        <footer>
+          <p><small>Author: Admin </small></p>
+        </footer>
       </article>
+      <!--      new blog post -->
 
-      <article class="post">4. Tools for viewing source code and testing a webpage: Have a look
-        <br />
-        <a href="http://validator.w3.org " target="_blank">Validator</a> and <a href="http://www.netrenderer.com " target="_blank">Netrenderer</a>
-      </article>
+      <article class="post">
+        <header><h1>2. XHTML 1.0 Strict:</h1>
+          <p>Published: <time pubdate="pubdate">2017-10-09</time></p>
+        </header>
 
-      <article class="post">5. Menu: <a href="exercise5.html" target="_blank">My Solution</a>
-        <br /> Menus with list elements: Try to e.g. make a list based menu inside the header by looking the menu tutorial.
+        <p>
+          Make an absolute centered layout (#allcontent ) that validates in xhtml 1.0 strict
+        </p>
+        <footer>
+          <p><small>Author: Admin </small></p>
+        </footer>
       </article>
+      <!--      new blog post -->
+
+      <article class="post">
+        <header><h1>3. Make a 2 column layout with CSS:  </h1>
+          <p>Published: <time pubdate="pubdate">2017-10-09</time></p>
+        </header>
+
+        <p>Try to implement the following wireframe on the webpage using div tags, id and class attributes in the html code and e.g.
+        </p>
+        <footer>
+          <p><small>Author: Admin </small></p>
+        </footer>
+      </article>
+      <!--      new blog post -->
+
+
 
     </main>
 
 
 
 
-    <footer id="footer">
-      <h1>Footer</h1>
+    <footer id="mainfooter">
+      <p>Footer</p>
     </footer>
 
 

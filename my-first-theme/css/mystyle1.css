@@ -7,38 +7,53 @@ body{
 	background-color:#fff;
 }
 
-article,aside, main, footer, header {
+article,aside, main {
 	border:2px solid;
-	border-radius:25px; /* css3 properties */
+	border-radius:5px; /* css3 properties */
 	padding: 10px;
+}
 
-
+time {
+	font-style: italic;
 
 }
 
+article>header{
+	padding: 10px 0px;
+}
+article>footer{
+	padding: 10px 0px;
+}
+
+/* layout  */
 #allcontent{
 	width:960px;
 	margin:0 auto
 }
 
-#header{
-	width:960px;background-color:#fc3;
+#mainheader{
+	width:960px;
+	background-color:#fc3;
 	height:150px;
-	margin:5px
+	margin:5px;
+
+	border:2px solid;
+	border-radius:5px; /* css3 properties */
+	padding: 10px;
 
 }
 
 #sidebar{
 	width:120px;
-	background-color:green;
-	height:500px;
+	height:450px;
+	background-color: lightgrey;
 	margin-left:5px;
 	float:left
 }
 
 #content{
 	width:805px;
-	background-color:#6c9;
+	background-color: lightgrey;
 	margin-top:5px;
 	margin-left:160px
 }
@@ -52,11 +67,19 @@ article,aside, main, footer, header {
 }
 
 
-#footer{
+
+
+#mainfooter{
 	width:960px;
-	background-color:brown;
+	background-color:	darkgrey;
+	/*color: white; */	
 	margin:5px;
 	height:80px;
+
+	border:2px solid;
+	border-radius:5px; /* css3 properties */
+	padding: 10px;
+
 
 }
 
