@@ -29,23 +29,33 @@
 
 
 <?php
-echo "<br /><br /><br />";
 
 // the post loop
 if ( have_posts() ) {
 	while ( have_posts() ) {the_post();
+?>
+<!--      new blog post -->
+<article class="post">
+  <header><h1>1. Markup Exercise: </h1>
+    <p>Published: <time pubdate="pubdate">2017-10-09</time></p>
+  </header>
 
-		// Post Content via template tags
-    the_title('Post title: ');   // output the post title
-    the_time('F j, Y');         // output the post date F: month, j: day, Y:Year
+  <p>Make a html5 document were you markup the follow text from chapter 5 in the HTML5 book with propper semantic tags (h1,h2,h3,p,q,code…).
+  </p>
+  <footer>
+    <p><small>Author: Admin </small></p>
+  </footer>
+</article>
+<!--      new blog post -->
 
-    the_content('<p>','</p>');  // output the post Content
+<?php	the_title('Post title: ');   // output the post title ?>
+<?php	the_time('F j, Y');         // output the post date F: month, j: day, Y:Year ?>
 
+<?php the_content('<p>','</p>');  // output the post Content ?>
 
-    echo "<p>";
-    the_author('');
+<?php the_author(''); ?>
 
-    echo "</p><hr>";
+<?php
 
 	} // end while
 } // end if
