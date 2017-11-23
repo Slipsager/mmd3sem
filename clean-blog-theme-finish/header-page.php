@@ -23,14 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
-   <!--  <?php wp_head(); ?> -->
 </head>
 
 <body>
@@ -46,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Start Bootstrap</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,45 +63,18 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('<?php echo get_template_directory_uri();?>/img/post-bg.jpg')">
+
+    <header class="intro-header" style="background-image: url('<?php echo get_template_directory_uri();?>/img/about-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                      <?php the_post(); ?>
+                    <div class="site-heading">
 
-                        <h1><?php the_title();?></h1>
+                        <h1><?php the_title(); ?></h1>
                         <hr class="small">
-                        <span class="subheading"><?php the_excerpt();?></span>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <span class="subheading"><?php the_excerpt(); ?></span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-
-
-      <!-- Post Content -->
-      <article>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-
-                <?php the_content(); ?>
-
-
-          </div></div>
-      </div>
-    </article>
-      <hr>
-
-      <?php
-      get_footer();
-      ?>

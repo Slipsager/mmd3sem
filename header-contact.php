@@ -70,42 +70,16 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-
-    <header class="intro-header" style="background-image: url('<?php echo get_template_directory_uri();?>/img/about-bg.jpg')">
+    <header class="intro-header" style="background-image: url('<?php echo get_template_directory_uri();?>/img/contact-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-
-                        <h1>About me</h1>
+                        <h1>Contact me</h1>
                         <hr class="small">
-                        <span class="subheading">This is what I do</span>
+                        <span class="subheading">Have questions? I have answers (maybe).</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <?php get_sidebar(); ?>
-    <!-- Main Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-      <!-- the wp loop   ------------------------------------------------------>
-      <?php
-
-      		the_post();
-
-          the_content();
-      ?>
-
-
-
-      </div>
-      <hr>
-      <?php
-
-
-      get_footer();
-      ?>

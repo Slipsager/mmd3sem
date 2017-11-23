@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <head>
   <title>The is a wordpress blog</title>
-    <link href="<?php echo get_template_directory_uri()?>/css/mystyle1.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div id="allcontent">
-    <header id="mainheader">
-      <h1><?php bloginfo('name');  ?></h1>
-      <nav id="menu">
+  <h2> <?php bloginfo('name');   ?>   </h2>
+  <h2> <?php bloginfo('description');   ?>   </h2>
+  <hr>
 
-        <ul>
-          <li><a href="#">INTRO</a></li>
-          <li><a href="#">HTML</a></li>
-          <li><a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">Semantic HTML5</a></li>
-        </ul>
-      </nav>
-      <!-- menu-->
+  <?php
+
+  // the post loop
+  if ( have_posts() ) {
+  	while ( have_posts() ) {	the_post();
+  ?>
+
+  <article class="post">
+    <header><h1><?php the_title(); ?></h1>
+      <p>Published: <time pubdate="pubdate"><?php the_date(); ?></time></p>
     </header>
 
-    <aside id="sidebar">
-      <p>Sidebar</p>
-    </aside>
+    <p>Try to implement the following wireframe on the webpage using div tags, id and class attributes in the html code and e.g.
+    </p>
+    <footer>
+      <p><small>Author: Admin </small></p>
+    </footer>
+  </article>
 
-    <main id="content">
 
+  <?php
 
+  	} // end while
+  } // end if
 
-<?php
+  ?>
 
-// the post loop
-if ( have_posts() ) {
-	while ( have_posts() ) {the_post();
-?>
-<!--      new blog post -->
-<article class="post">
-  <header>
-    <h1><?php	the_title('Post title: ');   // output the post title ?>
-</h1>
-    <p>Published: <time pubdate="pubdate"><?php	the_time('F j, Y');         // output the post date F: month, j: day, Y:Year ?>
-</time></p>
-  </header>
-
-  <?php the_content('<p>','</p>');  // output the post Content ?>
-
-  <footer>
-    <p><small>Author: <?php the_author(''); ?>
- </small></p>
-  </footer>
-</article>
-<!--      new blog post -->
-
-<?php
-
-	} // end while
-} // end if
-
-?>
 </body>
 </html>
