@@ -54,6 +54,7 @@
         <?php
 
     wp_nav_menu( array(
+      'menu' => 'main',
       'theme_location' => 'top',
       'menu_class' => 'nav navbar-nav navbar-right',
       'container' => 'ul',
